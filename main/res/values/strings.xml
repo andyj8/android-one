@@ -18,5 +18,6 @@
     <string name="back_button_label">Back</string>
     <string name="cancel_button_label">Cancel</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_home">HomeActivity</string>
 
 </resources>

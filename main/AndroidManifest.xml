@@ -31,6 +31,10 @@
                 android:resource="@xml/authenticator" />
         </service>
 
+        <activity
+            android:name="com.andy.auth.HomeActivity"
+            android:label="@string/title_activity_home" >
+        </activity>
     </application>
 
     <!-- To auto-complete the email text field in the login form with the user's emails -->
