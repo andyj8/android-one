@@ -1,20 +1,31 @@
 package com.andy.auth;
 
+import android.accounts.*;
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
-
 
 public class MainActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Intent intent = new Intent();
+        AccountManager mAccountManager = AccountManager.get(this);
+        Account[] accounts = mAccountManager.getAccountsByType("com.andy.auth");
+
+        if (accounts.length > 0) {
+            Account account = accounts[0];
+            mAccountManager.getAuthToken(account, "com.andy.auth", null, this, null, null);
+        } else {
+            mAccountManager.addAccount("com.andy.auth", "FULL", null, null, this, null, null);
+        }
+
+        finish();
     }
 
     @Override
