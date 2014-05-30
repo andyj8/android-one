@@ -10,6 +10,7 @@ import org.apache.http.client.entity.UrlEncodedFormEntity;
 import org.apache.http.client.methods.HttpPost;
 import org.apache.http.impl.client.DefaultHttpClient;
 import org.apache.http.message.BasicNameValuePair;
+import org.apache.http.util.EntityUtils;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -42,7 +43,7 @@ public class NetworkClient
 
             HttpResponse response = httpclient.execute(httppost);
             if (response.getStatusLine().getStatusCode() == HttpStatus.SC_OK) {
-                token = "TOKEN";
+                token = EntityUtils.toString(response.getEntity());
             }
 
         } catch (ClientProtocolException e) {
@@ -52,7 +53,6 @@ public class NetworkClient
         }
 
         return token;
-
     }
 
 }
