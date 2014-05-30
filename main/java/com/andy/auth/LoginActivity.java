@@ -37,7 +37,13 @@ public class LoginActivity extends AccountAuthenticatorActivity implements Login
         boolean success = ((authToken != null) && (authToken.length() > 0));
         if (success) {
             final Account account = new Account(mUsername, "com.andy.auth");
-            mAccountManager.setPassword(account, mPassword);
+
+            if (getIntent().getBooleanExtra("new", false)) {
+                mAccountManager.addAccountExplicitly(account, mPassword, null);
+                mAccountManager.setAuthToken(account, "FULL", authToken);
+            } else {
+                mAccountManager.setPassword(account, mPassword);
+            }
 
             final Intent intent = new Intent();
             intent.putExtra(AccountManager.KEY_ACCOUNT_NAME, mUsername);
