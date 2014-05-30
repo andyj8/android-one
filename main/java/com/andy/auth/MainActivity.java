@@ -20,7 +20,7 @@ public class MainActivity extends Activity {
 
         if (accounts.length > 0) {
             Account account = accounts[0];
-            mAccountManager.getAuthToken(account, "com.andy.auth", null, this, null, null);
+            mAccountManager.getAuthToken(account, "FULL", null, this, null, null);
         } else {
             mAccountManager.addAccount("com.andy.auth", "FULL", null, null, this, null, null);
         }
