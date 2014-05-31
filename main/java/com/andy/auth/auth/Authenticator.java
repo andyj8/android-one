@@ -61,6 +61,7 @@ public class Authenticator extends AbstractAccountAuthenticator
                 final Bundle result = new Bundle();
                 result.putString(AccountManager.KEY_ACCOUNT_NAME, account.name);
                 result.putString(AccountManager.KEY_AUTHTOKEN, authToken);
+                result.putString(AccountManager.KEY_ACCOUNT_TYPE, "com.andy.auth");
                 return result;
             }
         }
