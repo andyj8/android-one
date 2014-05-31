@@ -40,7 +40,7 @@ public class LoginActivity extends AccountAuthenticatorActivity implements Login
 
             if (getIntent().getBooleanExtra("new", false)) {
                 mAccountManager.addAccountExplicitly(account, mPassword, null);
-                mAccountManager.setAuthToken(account, "FULL", authToken);
+                // mAccountManager.setAuthToken(account, "FULL", authToken);
             } else {
                 mAccountManager.setPassword(account, mPassword);
             }
