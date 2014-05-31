@@ -16,14 +16,12 @@ public class Authenticator extends AbstractAccountAuthenticator
         mContext = context;
     }
 
-    // Editing properties is not supported
     @Override
     public Bundle editProperties(
         AccountAuthenticatorResponse r, String s) {
         throw new UnsupportedOperationException();
     }
 
-    // Don't add additional accounts
     @Override
     public Bundle addAccount(
         AccountAuthenticatorResponse r,
@@ -40,7 +38,6 @@ public class Authenticator extends AbstractAccountAuthenticator
         return bundle;
     }
 
-    // Ignore attempts to confirm credentials
     @Override
     public Bundle confirmCredentials(
         AccountAuthenticatorResponse r,
@@ -49,7 +46,6 @@ public class Authenticator extends AbstractAccountAuthenticator
         return null;
     }
 
-    // Getting an authentication token is not supported
     @Override
     public Bundle getAuthToken(
         AccountAuthenticatorResponse r,
@@ -82,13 +78,11 @@ public class Authenticator extends AbstractAccountAuthenticator
         return bundle;
     }
 
-    // Getting a label for the auth token is not supported
     @Override
     public String getAuthTokenLabel(String s) {
         throw new UnsupportedOperationException();
     }
 
-    // Updating user credentials is not supported
     @Override
     public Bundle updateCredentials(
         AccountAuthenticatorResponse r,
@@ -97,7 +91,6 @@ public class Authenticator extends AbstractAccountAuthenticator
         throw new UnsupportedOperationException();
     }
 
-    // Checking features for the account is not supported
     @Override
     public Bundle hasFeatures(
         AccountAuthenticatorResponse r,
