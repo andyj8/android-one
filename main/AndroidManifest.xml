@@ -10,7 +10,7 @@
         <activity
             android:name="com.andy.auth.MainActivity"
             android:label="@string/title_activity_main"
-            android:launchMode="singleTask">
+            android:launchMode="singleTask" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -26,14 +26,19 @@
             <intent-filter>
                 <action android:name="android.accounts.AccountAuthenticator" />
             </intent-filter>
+
             <meta-data
                 android:name="android.accounts.AccountAuthenticator"
                 android:resource="@xml/authenticator" />
         </service>
 
         <activity
-            android:name="com.andy.auth.HomeActivity"
-            android:label="@string/title_activity_home" >
+            android:name="com.andy.auth.AboutActivity"
+            android:label="@string/title_activity_about_activity" >
+        </activity>
+        <activity
+            android:name="com.andy.auth.SettingsActivity"
+            android:label="@string/title_activity_settings" >
         </activity>
     </application>
 
