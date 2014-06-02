@@ -2,6 +2,13 @@
 
 <PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <ListPreference
+        android:key="pref_list"
+        android:title="@string/title_pref_list"
+        android:summary="@string/summary_pref_list"
+        android:entries="@array/pref_list_entry_labels"
+        android:entryValues="@array/pref_list_entry_values" />
+
     <PreferenceCategory
         android:title="@string/title_pref_category_checkbox"
         android:key="pref_category_checkbox">
@@ -19,6 +26,5 @@
             android:defaultValue="false" />
 
     </PreferenceCategory>
-
 
 </PreferenceScreen>

@@ -31,5 +31,7 @@
     <string name="summary_pref_checkbox_one">Some summary text for check box one.</string>
     <string name="title_pref_checkbox_two">Checkbox One</string>
     <string name="summary_pref_checkbox_two">Some summary text for check box two.</string>
+    <string name="title_pref_list">List Options</string>
+    <string name="summary_pref_list">Please select an option from the list.</string>
 
 </resources>
