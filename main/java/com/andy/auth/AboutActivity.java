@@ -1,20 +1,18 @@
 package com.andy.auth;
 
-import android.app.Activity;
 import android.os.Bundle;
-import android.view.Menu;
-import android.view.MenuItem;
+import android.webkit.WebView;
 
-
-public class AboutActivity extends Activity {
+public class AboutActivity extends MainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about);
+
+        WebView webView = (WebView) findViewById(R.id.webview_about);
+        webView.loadUrl("file:///android_asset/about.html");
+
     }
-
-
-
 
 }

@@ -5,11 +5,9 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <TextView
+    <WebView
+        android:id="@+id/webview_about"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent"
-        android:id="@+id/editText"
-        android:gravity="center"
-        android:text="Pointless App"/>
+        android:layout_height="fill_parent" />
 
 </RelativeLayout>
