@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <PreferenceCategory
+        android:title="@string/title_pref_category_checkbox"
+        android:key="pref_category_checkbox">
+
+        <CheckBoxPreference
+            android:key="pref_checkbox_one"
+            android:title="@string/title_pref_checkbox_one"
+            android:summary="@string/summary_pref_checkbox_one"
+            android:defaultValue="true" />
+
+        <CheckBoxPreference
+            android:key="pref_checkbox_two"
+            android:title="@string/title_pref_checkbox_two"
+            android:summary="@string/summary_pref_checkbox_two"
+            android:defaultValue="false" />
+
+    </PreferenceCategory>
+
+
+</PreferenceScreen>
