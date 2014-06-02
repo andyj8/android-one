@@ -1,6 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <string-array name="drawer_links">
+        <item>First Link</item>
+        <item>Second Link</item>
+        <item>Third Link</item>
+        <item>Fourth Link</item>
+        <item>Fifth Link</item>
+    </string-array>
+
     <string-array name="pref_list_entry_labels">
         <item>List Item One</item>
         <item>List Item Two</item>
