@@ -18,7 +18,6 @@
     <string name="login_activity_loginfail_text_pwmissing">Type the password for this account.</string>
     <string name="login_activity_newaccount_text">Sign in to your Sample SyncAdapter account. </string>
 
-
     <string name="back_button_label">Back</string>
     <string name="cancel_button_label">Cancel</string>
 
@@ -33,5 +32,8 @@
     <string name="summary_pref_checkbox_two">Some summary text for check box two.</string>
     <string name="title_pref_list">List Options</string>
     <string name="summary_pref_list">Please select an option from the list.</string>
+
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
 
 </resources>
