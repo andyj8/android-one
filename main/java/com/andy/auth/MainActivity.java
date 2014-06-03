@@ -123,7 +123,10 @@ public class MainActivity extends Activity {
     private class DrawerItemClickListener implements ListView.OnItemClickListener {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
+            if (position == 0) {
+                Intent i = new Intent(getApplicationContext(), MovieActivity.class);
+                startActivity(i);
+            }
         }
     }
 
