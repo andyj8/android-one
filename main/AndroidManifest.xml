@@ -41,7 +41,7 @@
             android:label="@string/title_activity_settings" >
         </activity>
         <activity
-            android:name="com.andy.auth.TabbedActivity"
+            android:name=".MovieActivity"
             android:label="@string/title_activity_tabbed" >
         </activity>
     </application>
