@@ -15,9 +15,7 @@ public class MovieActivity extends FragmentActivity {
 
     private String[] mMovies;
     private String[] mDescriptions;
-
     private ViewPager mViewPager;
-    private Fragment mDescFragment;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,14 +48,25 @@ public class MovieActivity extends FragmentActivity {
             public void onListItemClick(ListView l, View v, int position, long id) {
                 super.onListItemClick(l, v, position, id);
                 getSupportFragmentManager().beginTransaction()
-                    .replace(R.id.movies_container, pagerFragment)
+                    .hide(this)
                     .addToBackStack(null)
+                    .show(pagerFragment)
+                    .commit();
+            }
+            @Override
+            public void onPause() {
+                super.onPause();
+                getSupportFragmentManager().beginTransaction()
+                    .hide(pagerFragment)
+                    .show(this)
                     .commit();
             }
         };
 
         getSupportFragmentManager().beginTransaction()
             .add(R.id.movies_container, listFragment)
+            .add(R.id.movies_container, pagerFragment)
+            .hide(pagerFragment)
             .commit();
 
     }
