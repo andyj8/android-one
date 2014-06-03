@@ -47,6 +47,7 @@ public class MovieActivity extends FragmentActivity {
             @Override
             public void onListItemClick(ListView l, View v, int position, long id) {
                 super.onListItemClick(l, v, position, id);
+                mViewPager.setCurrentItem(position, false);
                 getSupportFragmentManager().beginTransaction()
                     .hide(this)
                     .addToBackStack(null)
