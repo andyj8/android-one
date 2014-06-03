@@ -92,8 +92,11 @@ public class MainActivity extends Activity {
         mDrawerLayout.setDrawerListener(mDrawerToggle);
 
         mDrawerToggle = new ActionBarDrawerToggle(
-            this, mDrawerLayout, R.drawable.ic_drawer, R.string.drawer_open, R.string.drawer_close
-        ) {
+                this,
+                mDrawerLayout,
+                R.drawable.ic_drawer,
+                R.string.drawer_open,
+                R.string.drawer_close) {
             @Override
             public void onDrawerOpened(View drawerView) {
                 super.onDrawerOpened(drawerView);
@@ -112,7 +115,7 @@ public class MainActivity extends Activity {
 
         mDrawerList = (ListView) findViewById(R.id.left_drawer);
         mDrawerList.setAdapter(new ArrayAdapter<String>(
-            this, android.R.layout.simple_list_item_1, mLinks
+                this, android.R.layout.simple_list_item_1, mLinks
         ));
         mDrawerList.setOnItemClickListener(new DrawerItemClickListener());
 
