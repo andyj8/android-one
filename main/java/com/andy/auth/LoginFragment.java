@@ -12,12 +12,11 @@ import android.widget.EditText;
 public class LoginFragment extends Fragment {
 
     private OnLoginListener mOnLoginListener;
-
     private EditText mUsernameEdit;
     private EditText mPasswordEdit;
 
     public LoginFragment() {
-        // Required empty public constructor
+
     }
 
     @Override
@@ -27,8 +26,7 @@ public class LoginFragment extends Fragment {
 
     @Override
     public View onCreateView(
-        LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState
-    ) {
+            LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_login, container, false);
 
         mUsernameEdit = (EditText) view.findViewById(R.id.username_edit);
