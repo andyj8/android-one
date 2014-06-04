@@ -83,8 +83,8 @@ public class MenuActivity extends FragmentActivity
                 mode.getMenuInflater().inflate(R.menu.menu_context_album, menu);
                 return true;
             }
-            
-             @Override
+
+            @Override
             public boolean onActionItemClicked(ActionMode mode, MenuItem item) {
                 getDialogFragment(item.getTitle().toString()).show(getSupportFragmentManager(), "alert");
                 return true;
