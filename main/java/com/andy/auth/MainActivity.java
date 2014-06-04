@@ -129,6 +129,9 @@ public class MainActivity extends Activity {
             if (position == 0) {
                 Intent i = new Intent(getApplicationContext(), MovieActivity.class);
                 startActivity(i);
+            } else if (position == 1) {
+                Intent i = new Intent(getApplicationContext(), MenuActivity.class);
+                startActivity(i);
             }
         }
     }

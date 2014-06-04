@@ -25,6 +25,7 @@
     <string name="title_activity_about_activity">About</string>
     <string name="title_activity_settings">Settings</string>
     <string name="title_activity_tabbed">Movies</string>
+    <string name="title_activity_menu">Rush Albums</string>
 
     <string name="title_pref_category_checkbox">Checkbox Settings</string>
     <string name="title_pref_checkbox_one">Checkbox One</string>
@@ -36,5 +37,11 @@
 
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
+
+    <string name="menu_edit">Edit</string>
+    <string name="menu_share">Share</string>
+    <string name="menu_delete">Delete</string>
+
+    <string name="dialog_title">You pressed</string>
 
 </resources>

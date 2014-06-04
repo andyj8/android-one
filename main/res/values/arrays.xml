@@ -39,4 +39,27 @@
         <item>The purportedly true story of Oscar Grant III, a 22-year-old Bay Area resident, who crosses paths with friends, enemies, family, and strangers on the last day of 2008.</item>
     </string-array>
 
+    <string-array name="rush_albums">
+        <item>Rush (1974)</item>
+        <item>Fly by Night (1975)</item>
+        <item>Caress of Steel (1975)</item>
+        <item>2112 (1976)</item>
+        <item>A Farewell to Kings (1977)</item>
+        <item>Hemispheres (1978)</item>
+        <item>Permanent Waves (1980)</item>
+        <item>Moving Pictures (1981)</item>
+        <item>Signals (1982)</item>
+        <item>Grace Under Pressure (1984)</item>
+        <item>Power Windows (1985)</item>
+        <item>Hold Your Fire (1987)</item>
+        <item>Presto (1989)</item>
+        <item>Roll the Bones (1991)</item>
+        <item>Counterparts (1993)</item>
+        <item>Test for Echo (1996)</item>
+        <item>Vapor Trails (2002)</item>
+        <item>Feedback (2004, cover album)</item>
+        <item>Snakes &amp; Arrows (2007)</item>
+        <item>Clockwork Angels (2012)</item>
+    </string-array>
+
 </resources>
