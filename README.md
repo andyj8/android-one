@@ -15,7 +15,7 @@
     exit;
 
     <?php
-    
+
     require 'vendor/autoload.php';
     
     $gcm = new Endroid\Gcm\Gcm('AIzaSyCSsEYQf9aX3pzEaYeHE91NaeRA7KsAn30');
