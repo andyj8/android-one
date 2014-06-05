@@ -102,10 +102,6 @@ public class MessagingActivity extends Activity {
                     regid = gcm.register(SENDER_ID);
                     msg = "Device registered, registration ID=" + regid;
 
-                    // You should send the registration ID to your server over HTTP,
-                    // so it can use GCM/HTTP or CCS to send messages to your app.
-                    // The request to your server should be authenticated if your app
-                    // is using accounts.
                     sendRegistrationIdToBackend();
 
                     // Persist the regID - no need to register again.
@@ -125,9 +121,11 @@ public class MessagingActivity extends Activity {
 
     }
 
+    /**
+     * The request to your server should be authenticated if your app is using accounts.
+     *
+     */
     private void sendRegistrationIdToBackend() {
-
-
 
     }
 
