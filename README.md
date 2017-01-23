@@ -19,11 +19,11 @@
 
     require 'vendor/autoload.php';
     
-    $gcm = new Endroid\Gcm\Gcm('AIzaSyCSsEYQf9aX3pzEaYeHE91NaeRA7KsAn30');
+    $gcm = new Endroid\Gcm\Gcm('');
     
     $registrationIds = array(
-    	'APA91bEIEfo96pmsL-V-Pa1svaDiFPq43wNGeOiIi_YVC0NNd3g_99pcfVadOySbagVa-KIBwHLShIz6TkNZW5YaC0QZ3ibQNPY_6Um4rUK2Sh0fdTKMVzw6AesWMg21xb4fi1mkv7ESm0XllQdbTM9AvK3t5L6sIA',
-    	'APA91bE4U8COOwCOyck6nCALX_DkQCftVbhloHC9ivmYLtROspSZGPtGqUa4icDZjRTGMv1aCwe2PynnDfP0_wux4vkQkR6cUqSJuYYpJ13vckVKiD_-4WhvjiFxT-vDcx7f0o5v_vANfEMDBMvzwl-4bORbJy0Zag',
+    	'-V--',
+    	'---',
     );
     
     $data = array(
